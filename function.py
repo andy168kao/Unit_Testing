@@ -9,3 +9,9 @@ def find_y(point1, point2, x):
     y = m * x + b
 
     return y
+
+
+def is_on_line(point1, point2, point3):
+    x3, y3 = point3
+    y_expected = find_y(point1, point2, x3)
+    return y3 == y_expected
